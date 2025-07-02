@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Article preview component</title>
+  <title>Article preview component | by Martha González</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,23 +20,55 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main>
+    <div class="article-card">
+      <div class="article-img">
+        <img src="./images/drawers.jpg" alt="green drawers with portraits and a jar on top">
+      </div>
+      
+      <div class="article-text">
+        <h1>Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I've got some simple tips 
+        to help you make any room feel complete.</p>
+      </div>
+      
+      <div class="article-author">
+        <div class="avatar-wrapper">
+          <img src="./images/avatar-michelle.jpg" alt="a profile picture of Michelle Appleton" />
+        </div>
+        <div class="author-info">
+          <p>Michelle Appleton</p>
+          <p>28 Jun 2020</p>
+        </div>        
+        <img src="./images/icon-share.svg" alt="share icon" id="share-icon-passive">
+      </div>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="share">  
+        <p>Share</p>
+        <ul>
+          <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
+          <li><img src="./images/icon-twitter.svg" alt="twitter icon"></li>
+          <li><img src="./images/icon-pinterest.svg" alt="pinterest icon"></li>
+        </ul>
+        <img src="./images/icon-share.svg" alt="share icon" id="share-icon-active">        
+      </div>
+      
+    
+    </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
+
+  <footer>  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel='noopener' target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Martha González</a>.
+    </div>
+  </footer>
 </body>
 </html>
