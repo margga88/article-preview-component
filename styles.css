@@ -1,0 +1,154 @@
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+
+    --fntwgt-500: 500;
+    --fntwgt-700: 700;
+
+}
+
+html {
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: var(--fntwgt-500);
+}
+
+
+/* COMPOSITION */
+
+body {
+    display: flex;
+    min-width: 320px;
+    place-items: center;    
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--LightGrayishBlue);
+}
+
+main {
+    display: flex;
+    width: 320px;
+    height: auto;
+    margin: 0 auto;     
+}
+
+.article-card {
+    width: 320px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    
+}
+
+.article-img {
+    width: inherit;       
+}
+
+.article-img img {
+    width: inherit;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px; 
+}
+
+.article-text {
+    margin: 30px 30px 15px;
+}
+
+.article-author {
+    display: grid;
+    margin: 30px;
+    width: inherit;
+    place-items: center;
+    grid-template-columns: 40px 130px 20px 50px;
+    grid-template-rows: repeat(1, max-content);
+    gap: 10px;    
+}
+
+.avatar-wrapper {
+    width: 40px;
+    height: 40px;    
+    grid-area: 1 / 1 / 2 / 2;    
+}
+
+.avatar-wrapper img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.author-info {    
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.share-passive-wrapper {    
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--LightGrayishBlue);
+    grid-area: 1 / 4 / 2 / 4;
+}
+
+#share-icon-passive {
+    padding: 8px 8px 6px;    
+}
+
+.share {
+    display: none;    
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;        
+}
+
+
+
+
+/* UTILITIES */
+
+.article-title {
+    font-size: 1.25rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.author-name {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fntwgt-700);
+    margin: 0 auto;
+
+}
+
+.article-date {
+    color: var(--DesaturatedDarkBlue);
+    margin: 0 auto;    
+}
+
+.article-text-preview {
+    color: var(--DesaturatedDarkBlue);
+    line-height: 1.5;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* BLOCKS */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+
+/* EXCEPTION */
