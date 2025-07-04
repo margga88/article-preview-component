@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css" />   
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -20,7 +20,7 @@
 
   <main>
 
-    <div class="article-card">
+    <div class="article-card" id="article-card">
       <div class="article-img">
         <img src="./images/drawers.jpg" alt="green drawers with portraits and a jar on top">
       </div>
@@ -35,7 +35,7 @@
       </div>
       
       <div class="author-share-wrapper">
-        <div class="article-author">
+        <div class="article-author" id="article-author">
           <div class="avatar-wrapper">
             <img src="./images/avatar-michelle.jpg" alt="a profile picture of Michelle Appleton" />
           </div>
@@ -44,20 +44,20 @@
             <p class="article-date">28 Jun 2020</p>
           </div>
           <div class="share-passive-wrapper">        
-            <img src="./images/icon-share.svg" alt="share icon" id="share-icon-passive">
+            <img src="./images/icon-share.svg" alt="share icon" id="share-icon-passive" onclick="shareFunction()">
           </div>
         </div>
 
-        <div class="share">
+        <div class="share" id="share">
           <div class="share-contents">  
             <p>Share</p>
             <ul class="share-icons">
-              <li><img src="./images/icon-facebook.svg" alt="facebook icon" ></li>
+              <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
               <li><img src="./images/icon-twitter.svg" alt="twitter icon"></li>
               <li><img src="./images/icon-pinterest.svg" alt="pinterest icon"></li>
             </ul>
             <div class="share-active-wrapper">
-              <img src="./images/icon-share.svg" alt="share icon" id="share-icon-active">
+              <img src="./images/icon-share.svg" alt="share icon" id="share-icon-active" onclick="shareFunction()">
             </div>
           </div>        
         </div>
@@ -75,6 +75,8 @@
     </div>
   
   </footer>
+
+  <script src="./scripts.js"></script>
 
 </body>
 </html>
