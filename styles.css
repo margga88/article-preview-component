@@ -158,9 +158,6 @@ main {
 }
 
 
-
-
-
 footer {
     position: absolute;
     bottom: 0;
@@ -209,3 +206,63 @@ footer {
 
 
 /* EXCEPTION */
+
+@media only screen and (min-width: 1024px) {
+    
+    main {        
+        width: 720px;
+        height: 275px
+    }
+
+    .article-card {
+        display: grid;
+        width: 720px;
+        height: 275px;
+        grid-template-columns: 275px 455px;
+        grid-template-rows: 200px 75px;  
+    }
+
+    .article-img {
+        width: 275px;
+        height: 275px;
+        overflow: hidden;        
+        grid-area: 1 / 1 / 2 / 1;
+    }
+
+    .article-img img {
+        width: 330px;
+        height: 275px;
+        object-fit: cover;
+        border-radius: 12px 0px 0px 12px;        
+    }
+
+    .article-text {
+        width: 380px;
+        height: 100px;
+        margin: 20px 35px 0px 40px;
+        grid-area: 1 / 2 / 1 / 2;
+    }
+
+    .author-share-wrapper {
+        position: relative;
+        width: 380px;
+        height: 75px;
+        margin: 0px 10px;
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .article-author {
+        width: 380px;
+        margin: 5px 30px; 
+        grid-template-columns: 40px 130px 125px 50px;
+    }
+
+
+    /* UTILITIES */
+
+    .article-title {
+        font-size: 1.55em;        
+    }
+
+
+}

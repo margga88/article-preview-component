@@ -4,11 +4,9 @@ let y = document.getElementById("article-author");
 
 function shareFunction() {
   let w = document.documentElement.clientWidth || window.innerWidth;
+  var targetWidth = 768; 
 
-  var targetWidthOne = 768;
-  var targetWidthTwo = 1440;  
-
-  if (w <= targetWidthOne && x.style.display === "none" && y.style.display === "grid") {
+  if (w <= targetWidth && x.style.display === "none" && y.style.display === "grid") {
     x.style.display = "block";
     y.style.display = "none";
   } 
