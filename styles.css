@@ -39,7 +39,8 @@ main {
     width: 320px;
     height: 500px;
     border-radius: 12px;
-    background-color: white;    
+    background-color: white;
+    box-shadow: 0px 20px 15px 1px hsl(212, 23%, 89%);    
 }
 
 .article-img {
@@ -102,8 +103,6 @@ main {
     padding: 8px 8px 6px;    
 }
 
-
-
 .share {   
     display: none;        
     width: inherit;
@@ -157,6 +156,28 @@ main {
     padding: 8px 8px 6px;   
 }
 
+.share-desktop {
+    display: none;    
+    position: absolute;
+    width: 250px;
+    height: 55px;        
+    top: -70px;
+    left: 255px;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px 1px hsl(212, 23%, 89%);
+}
+
+.share-pointer {
+    display: none;
+    position: absolute;             
+    top: -27px;
+    left: 368px;
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 22px;
+    height: 20px;
+    transform: rotate(45deg);    
+}
 
 footer {
     position: absolute;
@@ -208,6 +229,8 @@ footer {
 /* EXCEPTION */
 
 @media only screen and (min-width: 1024px) {
+
+    /* COMPOSITION */
     
     main {        
         width: 720px;
@@ -256,6 +279,12 @@ footer {
         margin: 5px 30px; 
         grid-template-columns: 40px 130px 125px 50px;
     }
+ 
+
+    .share-contents {
+        margin: 0 35px;
+        padding: 5px;
+    }
 
 
     /* UTILITIES */
@@ -263,6 +292,21 @@ footer {
     .article-title {
         font-size: 1.55em;        
     }
+
+    .share-contents p {
+        color: var(--GrayishBlue);
+        letter-spacing: 5px;
+    }
+
+    /* EXCEPTION */
+
+    .share-passive-wrapper:active {
+        background-color: var(--DesaturatedDarkBlue);
+    }
+
+    #share-icon-passive:active {
+        filter: brightness(0) invert(1);
+    }   
 
 
 }
