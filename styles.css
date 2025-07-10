@@ -106,7 +106,8 @@ main {
     display: none;        
     width: inherit;
     margin: 0 auto;
-    height: auto;       
+    height: auto;
+    padding-bottom: 1px;       
     background-color: var(--VeryDarkGrayishBlue);
     border-radius: 0px 0px 12px 12px;    
 }
