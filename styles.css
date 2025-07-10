@@ -106,8 +106,7 @@ main {
     display: none;        
     width: inherit;
     margin: 0 auto;
-    height: 67px;
-    padding-bottom: 1px;    
+    height: auto;       
     background-color: var(--VeryDarkGrayishBlue);
     border-radius: 0px 0px 12px 12px;    
 }
@@ -180,9 +179,10 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;        
+    width: 100%;
+    height: auto;       
 }
 
 
