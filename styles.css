@@ -60,7 +60,8 @@ main {
 .author-share-wrapper {
     position: absolute;
     width: inherit;
-    height: 60px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .article-author {
@@ -107,7 +108,7 @@ main {
     width: inherit;
     margin: 0 auto;
     height: auto;
-    padding-bottom: 1px;       
+         
     background-color: var(--VeryDarkGrayishBlue);
     border-radius: 0px 0px 12px 12px;    
 }
@@ -180,7 +181,7 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: auto;       
