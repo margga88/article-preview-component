@@ -6,7 +6,6 @@
 
     --fntwgt-500: 500;
     --fntwgt-700: 700;
-
 }
 
 html {
@@ -107,7 +106,8 @@ main {
     display: none;        
     width: inherit;
     margin: 0 auto;
-    height: auto;
+    height: 67px;
+    padding-bottom: 1px;    
     background-color: var(--VeryDarkGrayishBlue);
     border-radius: 0px 0px 12px 12px;    
 }

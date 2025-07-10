@@ -5,14 +5,14 @@ let d = document.getElementById("share-pointer");
 
 function shareFunction() {
   let w = document.documentElement.clientWidth || window.innerWidth;
-  var targetWidth = 768;  
+  var targetWidth = 1024;  
 
-  if (w <= targetWidth && a.style.display === "none" && b.style.display === "grid") {
+  if (w < targetWidth && a.style.display === "none" && b.style.display === "grid") {
     a.style.display = "block";
     b.style.display = "none";
   } 
 
-  else if (w > targetWidth && c.style.display === "none" && d.style.display === "none" ) {
+  else if (w >= targetWidth && c.style.display === "none" && d.style.display === "none" ) {
     c.style.display = "block";
     d.style.display = "block";    
   } 
