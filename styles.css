@@ -19,7 +19,7 @@ html {
 
 body {
     display: flex;
-    min-width: 320px;
+    min-width: 320px;    
     place-items: center;    
     box-sizing: border-box;
     margin: 0;
@@ -43,12 +43,14 @@ main {
 }
 
 .article-img {
-    width: inherit;       
+    width: inherit;
+    height: 200px;
+    overflow: hidden;       
 }
 
 .article-img img {
     width: inherit;
-    height: 200px;
+    height: 230px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px; 
 }
@@ -62,6 +64,7 @@ main {
     width: inherit;
     height: auto;
     margin: 0 auto;
+    padding-top: 6px;
 }
 
 .article-author {
@@ -108,7 +111,7 @@ main {
     width: inherit;
     margin: 0 auto;
     height: auto;
-         
+    padding-top: 5px;             
     background-color: var(--VeryDarkGrayishBlue);
     border-radius: 0px 0px 12px 12px;    
 }
@@ -116,11 +119,11 @@ main {
 .share-contents {
     display: grid;
     height: 55px;    
-    margin: 10px 30px;
+    margin: 5px 30px;
     padding-top: 10px;    
     place-items: center;    
     grid-template-columns: 60px 110px 20px 50px;
-    grid-template-rows: repeat(1, max-content);
+    grid-template-rows: 40px;
     gap: 10px;      
        
 }
@@ -181,7 +184,7 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: auto;       
@@ -208,11 +211,6 @@ footer {
     margin: 0 auto;    
 }
 
-.article-text-preview {
-    color: var(--DesaturatedDarkBlue);
-    line-height: 1.5;
-}
-
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
@@ -220,6 +218,12 @@ footer {
 
 
 /* BLOCKS */
+
+.article-text-preview {
+    color: var(--DesaturatedDarkBlue);
+    line-height: 1.5;
+    margin-right: 2px; 
+}
 
 .attribution { 
     font-size: 11px; 
@@ -285,7 +289,7 @@ footer {
 
     .share-contents {
         margin: 0 35px;
-        padding: 5px;
+        padding: 8px 5px;
     }
 
 
@@ -302,13 +306,17 @@ footer {
 
     /* EXCEPTION */
 
-    .share-passive-wrapper:active {
+    .share-passive-wrapper:active,
+    .share-passive-wrapper:hover {
         background-color: var(--DesaturatedDarkBlue);
     }
 
-    #share-icon-passive:active {
+    #share-icon-passive:active,
+    #share-icon-passive:hover {
         filter: brightness(0) invert(1);
-    }   
+    }
+    
+    
 
 
 }

@@ -56,7 +56,8 @@ This project was quite a treat or trick for me:
 - As usual I continued with the CUBE CSS methodology, which is fantastic and has proved itself quite useful especially when you lose yourself on the way of what were you supposed to do.
 - I certainly had to review a few things I haven't done in a while, or I did without even thinking twice, like the horizontal bars, something I used to do wothout even blinking but then found myself at a loss of where to even start with. Luckily for me, I found good resources to work on it and got back in track quickly.
 - It's been ages (not really, just a year or two) since I worked with filters, but I'm impressed at how quickly I tackled that, same for overlaying and the overflow property.
-- First time to _consciously_ connect JavaScript with an HTML file. I've spent too long working on separate JS files and even building tests and programs, but these rarely have gone connected to HTML. This definitely has made me review the language, and I enjoyed the process, especially when it worked.  
+- First time to _consciously_ connect JavaScript with an HTML file. I've spent too long working on separate JS files and even building tests and programs, but these rarely have gone connected to HTML. This definitely has made me review the language, and I enjoyed the process, especially when it worked.
+- Once I thought I had it all ready, turned out my own OS and computer played against me, except for Firefox who still updates in old OS versions. It showed me all the flaws that my mobile was showing me but my desktop in other browsers didn't, so this was quite an adventure.  
 
 ### Continued development
 
