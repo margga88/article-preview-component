@@ -10,7 +10,7 @@
 
 html {
     font-size: 13px;
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     font-weight: var(--fntwgt-500);
 }
 

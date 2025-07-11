@@ -1,11 +1,11 @@
-let a = document.getElementById("share");
-let b = document.getElementById("article-author");
-let c = document.getElementById("share-desktop");
-let d = document.getElementById("share-pointer");
+const a = document.getElementById("share");
+const b = document.getElementById("article-author");
+const c = document.getElementById("share-desktop");
+const d = document.getElementById("share-pointer");
 
 function shareFunction() {
   let w = document.documentElement.clientWidth || window.innerWidth;
-  var targetWidth = 1024;  
+  const targetWidth = 1024;  
 
   if (w < targetWidth && a.style.display === "none" && b.style.display === "grid") {
     a.style.display = "block";
